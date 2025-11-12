@@ -1,0 +1,43 @@
+img {
+  height: 1200px;
+  background-color: #f0f0f0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.lazy {
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.lazy.loaded {
+  opacity: 1;
+}
+
+.gallery {
+  max-width: 900px;
+  margin: 20px auto;
+  display: grid;
+  gap: 10px;
+}
+
+@media (min-width: 700px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.controls {
+  text-align: center;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background: #0066cc;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}

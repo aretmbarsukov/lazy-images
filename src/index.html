@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ліниве завантаження зображень</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Ліниве завантаження зображень</h1>
+  <p>Прокрутіть сторінку або натисніть кнопку, щоб завантажити зображення.</p>
+
+  <div class="controls">
+    <button id="loadAllBtn">Завантажити всі</button>
+    <button id="loadOnDemandBtn">Завантажити за натисканням</button>
+  </div>
+
+  <div class="gallery">
+    <img class="lazy" src="" data-src="https://picsum.photos/1600/900?random=1" alt="Image 1" />
+    <img class="lazy" src="" data-src="https://picsum.photos/1600/900?random=2" alt="Image 2" />
+    <img class="lazy" src="" data-src="https://picsum.photos/1600/900?random=3" alt="Image 3" />
+    <img class="lazy" src="" data-src="https://picsum.photos/1600/900?random=4" alt="Image 4" />
+    <img class="lazy" src="" data-src="https://picsum.photos/1600/900?random=5" alt="Image 5" />
+    <img class="lazy" src="" data-src="https://picsum.photos/1600/900?random=6" alt="Image 6" />
+  </div>
+
+  <script src="lazyload.js"></script>
+</body>
+</html>
