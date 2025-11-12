@@ -1,7 +1,7 @@
 img {
   height: 1200px;
+  width: 800px;
   background-color: #f0f0f0;
-  width: 100%;
   object-fit: cover;
 }
 
@@ -15,17 +15,15 @@ img {
 }
 
 .gallery {
-  max-width: 900px;
-  margin: 20px auto;
   display: grid;
-  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px auto;
+  width: fit-content;
 }
 
-@media (min-width: 700px) {
-  .gallery {
-    grid-template-columns: 1fr 1fr;
-  }
-}
+
 
 .controls {
   text-align: center;
